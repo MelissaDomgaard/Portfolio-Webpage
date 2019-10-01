@@ -1,7 +1,11 @@
 * {
     margin: 0;
-    width: 100%;
+    /*width: 100%;*/
 }
+body {
+    background-color: #162440;
+}
+
 #navbar {
     background-color: #F28627;
     display: flex;
@@ -12,13 +16,16 @@
     height: 60px;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
 }
+
 #navlist {
     display: flex;
     justify-content: space-around;
     width: 300px;
 }
+
 #navlist a:hover {
     background: #364959;
+    height: 60px;
 }
 
 ul {
@@ -42,7 +49,6 @@ a {
 
 #projects {
     background-color: #162440;
-
 }
 
 .projects-grid {
@@ -54,6 +60,11 @@ a {
     margin: 0 auto;
     margin-bottom: 6rem;
 }
+
+img {
+    display: block;
+    width: 100%;
+  }
 
 #contact {
     background-color: #021F59;
@@ -70,3 +81,14 @@ h1 {
 h2 {
     color: #fff;
 }
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+    html {
+      font-size: 80%;
+    }
