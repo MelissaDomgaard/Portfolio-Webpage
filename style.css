@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+}
+#navbar {
+    background-color: #F28627;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+#navlist {
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+}
+#navlist a:hover {
+    background: #364959;
+}
+
+ul {
+    list-style: none;
+    font-size: 2rem;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#welcome-section {
+    background-color: #162440;
+    height: 100vh;
+}
+#projects {
+    background-color: #021F59;
+
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+}
+
+#contact {
+    background-color: #162440;
+    height: 100vh;
+}
+
+h1 {
+    color: #fff;
+}
