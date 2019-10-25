@@ -74,13 +74,19 @@ img {
     justify-content: center;
 }
 
+.contact-links {
+    
+}
+
 h1 {
     color: #fff;
     font-size: 2.5rem;
 }
 h2 {
     color: #fff;
+    margin-bottom: 2rem;
 }
+
 
 footer {
     color: #fff;
@@ -94,3 +100,4 @@ footer {
     html {
       font-size: 80%;
     }
+}

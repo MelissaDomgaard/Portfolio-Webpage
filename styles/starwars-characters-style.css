@@ -1,0 +1,49 @@
+html {
+    background-color: black;
+}
+
+
+header {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+h1 {
+    color: red;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 2em;
+}
+
+p {
+color: white;
+font-family: 'Play', sans-serif;
+font-size: 1.5em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2rem;
+    width: 100%; 
+    max-width: 3800px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+#navbar {
+    background-color: red;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+#navlist a:hover {
+    background: #99d1ff;
+    height: 60px;
+}
