@@ -82,7 +82,7 @@ femaleButton.addEventListener('click', () => {
 let otherButton = document.createElement('button')
 otherButton.textContent = "Other Characters"
 
-femaleButton.addEventListener('click', () => {
+otherButton.addEventListener('click', () => {
     maleCharacters.forEach(character => {
         let matchedDiv = allDivs.find((oneDiv) => {
             return oneDiv.firstChild.textContent === character.name
@@ -92,6 +92,7 @@ femaleButton.addEventListener('click', () => {
         matchedDiv.setAttribute("style", "display: none;")
     })
 })
+
 
 navArea.appendChild(maleButton)
 navArea.appendChild(femaleButton)
