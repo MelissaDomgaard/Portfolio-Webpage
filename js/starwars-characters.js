@@ -59,10 +59,10 @@ maleButton.textContent = 'Male Characters'
 
 maleButton.addEventListener('click', () => {
     femaleCharacters.forEach(character => {
-        let matchedDiv = allDivs.find((oneDiv) => {
-            return oneDiv.firstChild.textContent === character.name
+        let matchedDiv = allDivs.filter(element => {
+            return element.firstChild.textContent === elt.name
         })
-        matchedDiv.setAttribute("style", "display: none;")
+        matchedDiv[0].setAttribute("style", "display: none;")
     })
 })
 

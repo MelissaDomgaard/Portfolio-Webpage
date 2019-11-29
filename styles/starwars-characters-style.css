@@ -2,7 +2,6 @@ html {
     background-color: black;
 }
 
-
 header {
     height: 200px;
     display: flex;
@@ -44,14 +43,17 @@ nav {
 }
 
 button {
+    display: flex;
+    justify-content: space-around;
     font-size: 1rem;
     padding: 5px;
-    background-color: red;
-    border-color: red;
+    background-color: rgb(218, 15, 15);
+    border-color: rgb(218, 15, 15);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-    margin-right: 20px;
+    /* margin-right: 20px; */
 
 }
-/* #navlist a:hover {
+button a:hover {
     background: #99d1ff;
-    height: 60px;} */
+    height: 60px;
+}
