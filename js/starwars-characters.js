@@ -59,10 +59,10 @@ maleButton.textContent = 'Male Characters'
 
 maleButton.addEventListener('click', () => {
     femaleCharacters.forEach(character => {
-        let matchedDiv = allDivs.filter(element => {
-            return element.firstChild.textContent === elt.name
+        let matchedDiv = allDivs.find(element => {
+            return element.firstChild.textContent === character.name
         })
-        matchedDiv[0].setAttribute("style", "display: none;")
+        matchedDiv.setAttribute("style", "display: none;")
     })
 })
 
@@ -79,7 +79,7 @@ femaleButton.addEventListener('click', () => {
     })
 })
 
-let otherButton = document.createElement('button')
+/* let otherButton = document.createElement('button')
 otherButton.textContent = "Other Characters"
 
 otherButton.addEventListener('click', () => {
@@ -91,12 +91,12 @@ otherButton.addEventListener('click', () => {
         )
         matchedDiv.setAttribute("style", "display: none;")
     })
-})
+}) */
 
 
 navArea.appendChild(maleButton)
 navArea.appendChild(femaleButton)
-navArea.appendChild(otherButton)
+// navArea.appendChild(otherButton)
 
 
 const maleCharacters = people.filter(person => person.gender === 'male')
