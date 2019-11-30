@@ -16,21 +16,23 @@ nav {
 }
 
 header {
-    height: 200px;
+    height: 450px;
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     color: rgb(196, 236, 248);
     font-family: 'Alegreya Sans SC', sans-serif;
-    font-size: 2em;
+    font-size: 1.25em;
+    margin: 0px;
 }
 
 p {
 color: rgb(196, 236, 248);
 font-family: 'Play', sans-serif;
-font-size: 1.5em;
+font-size: 1em;
+margin: 0px;
 }
 
 main {
@@ -44,7 +46,7 @@ main {
 }
 
 img {
-    width: 200px;
+    height: 300px;
 }
 
 button {
