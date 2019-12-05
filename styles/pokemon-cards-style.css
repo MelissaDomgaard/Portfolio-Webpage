@@ -22,7 +22,7 @@ main {
 }
 .picDivs {
     width: 80%;
-    
+    margin: 15px;
 }
 .scene {
     width: 200px;
@@ -77,8 +77,17 @@ main {
     transform: rotateY(180deg);
   }
 
+  h2 {
+    color: beige;
+  }
+
+  h3 {
+    color: beige;
+  }
+
   p {
       margin: 15px;
+      color: beige;
   }
 
   #newPokemon {

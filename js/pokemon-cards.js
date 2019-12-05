@@ -67,19 +67,21 @@ function populateDOM(single_pokemon) {
 
 function fillCardFront(pokeFront, data) {
     pokeFront.setAttribute('class', 'card_face card_face--front')
-    let name = document.createElement('h3')
+    let pokeName = document.createElement('h2')
     let pic = document.createElement('img')
     pic.setAttribute('class', 'picDivs')
 
     let pokeNum = getPokeNumber(data.id)
 
-    pokeFront.appendChild(name)
+    pokeFront.appendChild(pokeName)
     // name.textContent = `${data.name} height: ${data.height}`
 
     pic.src = `https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/images/${pokeNum}.png`
 
+    pokeName.textContent = `${data.name[0].toUpperCase()}${data.name.slice(1)}`
+
     pokeFront.appendChild(pic)
-    pokeFront.appendChild(name)
+    pokeFront.appendChild(pokeName)
 }
 
 
