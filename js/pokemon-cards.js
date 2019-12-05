@@ -88,10 +88,13 @@ function fillCardBack(pokeBack, data) {
 
     let pokeOrder = document.createElement('p')
     let pokeHP = document.createElement('h6')
+    let pokeAbility = document.createElement ('p')
     pokeOrder.textContent = `#${data.id} ${data.name[0].toUpperCase()}${data.name.slice(1)}`
-    pokeHP.textContent = data.stats[0].base_stat
+    pokeHP.textContent = `HP${data.stats[0].base_stat}`
+    pokeAbility.textContent = `Main Ability: ${data.abilities[0].ability.name}`
     pokeBack.appendChild(pokeOrder)
     pokeBack.appendChild(pokeHP)
+    pokeBack.appendChild(pokeAbility)
 }
 
 function getPokeNumber(id) {
@@ -99,12 +102,15 @@ function getPokeNumber(id) {
     if (id > 9 && id < 100) {
         return `0${id}`
     } else return id
-
+}
     /* let end =charURL.lastIndexOf('/')
     let charID = charURL.substring(end - 2, end)
     if (charID.indexOf('/') !== -1 {
         return `00${charID.slice(1, 2)}`
     } else {
         return `0${charID}`
-    } */
-}
+    }
+ } */
+const navArea = document.createElement('nav')
+
+ 
