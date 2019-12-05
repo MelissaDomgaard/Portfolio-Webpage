@@ -1,16 +1,23 @@
 
 class Pokemon {
     constructor(id, name) {
-    this.id = id
-    this.name = name
+        this.id = id
+        this.name = name
     }
 }
 
 const Thoremon = new Pokemon(900, 'Thoremon');
 
 const newButton = document.querySelector('#newPokemon')
-newButton.addEventListener('click', function(){
-    populateDOM(Thoremon)
+newButton.addEventListener('click', function () {
+    let pokeId = prompt("Please enter a Pokemon ID")
+    if (pokeId > 0 && pokeID <= 807) {
+    getPokemonData(`https://pokeapi.co/api/v2/pokemon/${pokeId}`).then(result => {
+        populateDOM(result)
+    })
+    } else {
+        alert('There are no Pokemon with that ID. Choose an ID that is less than 807')
+    }
 })
 
 async function getPokemonData(url) {
@@ -23,15 +30,13 @@ async function getPokemonData(url) {
     }
 }
 
-// ?limit=25&offset=${random()}`  add this to the URL to get 25 pokemon in random order
-
 // use the returned async data
-const theData = getPokemonData('https://pokeapi.co/api/v2/pokemon/')
+const theData = getPokemonData('https://pokeapi.co/api/v2/pokemon/?limit=25')
     .then(data => {
         for (const pokemon of data.results) {
             getPokemonData(pokemon.url)
-                .then(pokedata => {
-                    populateDOM(pokedata)
+                .then(pokemonData => {
+                    populateDOM(pokemonData)
                 })
         }
     })
@@ -53,25 +58,25 @@ function populateDOM(single_pokemon) {
     pokeCard.appendChild(pokeBack)
     pokeScene.appendChild(pokeCard)
 
-    mainArea.apendChild(pokeScene)
+    mainArea.appendChild(pokeScene)
 
     pokeCard.addEventListener('click', function () {
-        pokeCard.classList.toggle('is-flipped');
-    });
+        pokeCard.classList.toggle('is-flipped')
+    })
 }
 
 function fillCardFront(pokeFront, data) {
     pokeFront.setAttribute('class', 'card_face card_face--front')
-    let pokeName = document.createElement('h3')
-    let pokePic = document.createElement('img')
-    pokePic.setAttribute('class', 'picDivs')
+    let name = document.createElement('h3')
+    let pic = document.createElement('img')
+    pic.setAttribute('class', 'picDivs')
 
     let pokeNum = getPokeNumber(data.id)
 
     pokeFront.appendChild(name)
     // name.textContent = `${data.name} height: ${data.height}`
 
-    pokePic.src = `https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/images/${pokeNum}.png`
+    pic.src = `https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/images/${pokeNum}.png`
 
     pokeFront.appendChild(pic)
     pokeFront.appendChild(name)
