@@ -11,10 +11,10 @@ const Thoremon = new Pokemon(900, 'Thoremon');
 const newButton = document.querySelector('#newPokemon')
 newButton.addEventListener('click', function () {
     let pokeId = prompt("Please enter a Pokemon ID")
-    if (pokeId > 0 && pokeID <= 807) {
-    getPokemonData(`https://pokeapi.co/api/v2/pokemon/${pokeId}`).then(result => {
-        populateDOM(result)
-    })
+    if (pokeId > 0 && pokeId <= 807) {
+        getPokemonData(`https://pokeapi.co/api/v2/pokemon/${pokeId}`).then(result => {
+            populateDOM(result)
+        })
     } else {
         alert('There are no Pokemon with that ID. Choose an ID that is less than 807')
     }
