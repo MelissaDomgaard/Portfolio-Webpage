@@ -9,7 +9,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 2rem;
     width: 100%; 
-    max-width: 3800px;
+    max-width: 2500px;
     margin: 0 auto;
     margin-bottom: 6rem;
 }
@@ -57,10 +57,21 @@ main {
   }
   
   .card__face--front {
+    border: 2px solid #d4d4d4;
+    border-radius: 0.5rem;
+    margin: 15px;
     background: rgb(39, 39, 63);
+  }
+
+  .card__face--front:hover {
+    transition-duration: 1.5s;
+   transform: scale(1.1)
   }
   
   .card__face--back {
+    border: 2px solid #d4d4d4;
+    border-radius: 0.5rem;
+    margin: 15px;
     background: rgb(67, 67, 102);
     transform: rotateY(180deg);
   }
