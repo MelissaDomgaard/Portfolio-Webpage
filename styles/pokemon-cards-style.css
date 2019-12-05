@@ -22,6 +22,7 @@ main {
 }
 .picDivs {
     width: 80%;
+    
 }
 .scene {
     width: 200px;
@@ -44,7 +45,7 @@ main {
     transform: rotateY(180deg);
   }
   
-  .card__face {
+  .card_face {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -52,26 +53,26 @@ main {
     color: white; */
     text-align: center;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 1rem;
     backface-visibility: hidden;
   }
   
-  .card__face--front {
+  .card_face--front {
     border: 2px solid #d4d4d4;
     border-radius: 0.5rem;
-    margin: 15px;
+    /* margin: 15px; */
     background: rgb(39, 39, 63);
   }
 
-  .card__face--front:hover {
+  .card_face--front:hover {
     transition-duration: 1.5s;
    transform: scale(1.1)
   }
   
-  .card__face--back {
+  .card_face--back {
     border: 2px solid #d4d4d4;
     border-radius: 0.5rem;
-    margin: 15px;
+    /* margin: 15px; */
     background: rgb(67, 67, 102);
     transform: rotateY(180deg);
   }
