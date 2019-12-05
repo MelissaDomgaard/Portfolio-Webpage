@@ -1,6 +1,8 @@
 /* body {
-    background-color: #292929;
-} */
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc0;
+ } */
 
 main {
     display: grid;
