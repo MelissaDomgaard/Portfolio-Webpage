@@ -60,7 +60,6 @@ main {
   .card_face--front {
     border: 2px solid #d4d4d4;
     border-radius: 0.5rem;
-    /* margin: 15px; */
     background: rgb(39, 39, 63);
   }
 
@@ -72,9 +71,12 @@ main {
   .card_face--back {
     border: 2px solid #d4d4d4;
     border-radius: 0.5rem;
-    /* margin: 15px; */
     background: rgb(67, 67, 102);
     transform: rotateY(180deg);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   h2 {
