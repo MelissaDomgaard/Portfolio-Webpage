@@ -3,6 +3,9 @@
     flex-direction: column;
     background-color: #ccc0;
  } */
+* {
+  margin: 0;
+}
 
 main {
     display: grid;
@@ -10,13 +13,18 @@ main {
     grid-gap: 2rem;
     width: 100%; 
     max-width: 2500px;
-    margin: 0 auto;
+    margin: 20px;
     margin-bottom: 6rem;
 }
 
-/* header {
+header {
+  background-color: rgb(224, 155, 63);
+  color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-} */
+}
 
 /* Card Style */
 .charDivs {
@@ -83,17 +91,15 @@ main {
     justify-content: center;
   }
 
-  h2 {
+  h1, h2, h3 {
     color: beige;
-  }
-
-  h3 {
-    color: beige;
+    font-family: 'Roboto', sans-serif
   }
 
   p {
       margin: 15px;
       color: beige;
+      font-family: 'Roboto', sans-serif
   }
 
   #newPokemon {
@@ -102,5 +108,6 @@ main {
       background-color: aquamarine;
       font-size: 1.5rem;
       margin: 20px;
+      font-family: 'Roboto', sans-serif
   }
   

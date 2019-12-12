@@ -6,7 +6,7 @@ class Pokemon {
     }
 }
 
-const Thoremon = new Pokemon(900, 'Thoremon');
+// const Thoremon = new Pokemon(900, 'Thoremon');
 
 const newButton = document.querySelector('#newPokemon')
 newButton.addEventListener('click', function () {
@@ -113,6 +113,5 @@ function getPokeNumber(id) {
         return `0${charID}`
     }
  } */
-const navArea = document.createElement('nav')
 
  

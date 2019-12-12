@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/styles/style.css">
     <title>Webpage Portfolio</title>
 </head>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
 <body>
     <nav id="navbar">
@@ -19,34 +20,45 @@
     </nav>
     <section>
         <section id="welcome-section">
+                <img class="pic-profile"
+                src="/images/Profile Picture.jpg"
+                alt="profile picture">
             <h1>Welcome to Melissa's Portfolio</h1>
         </section>
         <section id="projects">
             <h2>Some of my projects...</h2>
             <div class="projects-grid">
-                <a href="https://codepen.io/melydomgaard/pen/VwZbMXM" target="_blank"><img
-                        src="/images/Profile Picture.jpg"
-                        alt="corporate business corporate business planning with business chart teamwork concept">
-                    <p class="project-title">Technology Interest Page</p>
-                </a>
-                <a href="/starwars-character.html" target="_blank"><img
-                        src="/images/rise-of-skywalker-theatrical-poster.jpg" alt="rise of skywalker movie poster">
-                    <p class="project-title">Star Wars Characters Project</p>
-                </a>
-                <a href="/pokemon-cards.html" target="_blank"><img
-                        src="/images/Wallpaper-HD-Pokemon.jpg"
-                        alt="corporate business corporate business planning with business chart teamwork concept">
-                    <p class="project-title">Pokemon Cards</p>
-                </a>
+                <div class="single-project">
+                    <a href="https://codepen.io/melydomgaard/pen/VwZbMXM" target="_blank">
+                        <img class="pic-project"
+                            src="/images/image-from-rawpixel-id-1216551-jpeg.jpg"
+                            alt="laptop on top of a desk">
+                        <p>Technology Interest Page</p>
+                    </a>
+                </div>
+                <div class="single-project">
+                    <a href="/starwars-character.html" target="_blank">
+                        <img class="pic-project"
+                            src="/images/rise-of-skywalker-theatrical-poster.jpg" alt="rise of skywalker movie poster">
+                        <p>Star Wars Characters Project</p>
+                    </a>
+                </div>
+                <div class="single-project">
+                    <a href="/pokemon-cards.html" target="_blank">
+                        <img class="pic-project" src="/images/Wallpaper-HD-Pokemon.jpg"
+                            alt="pokemon wallpaper">
+                        <p>Pokemon Cards</p>
+                    </a>
+                </div>
             </div>
         </section>
-        <section id="contact">
+        <!-- <section id="contact">
             <h2>Contact Me</h2>
             <p><a id="profile-link" href="https://github.com/MelissaDomgaard" target="_blank">GitHub</a></p>
             <p><a href="mailto:example@example.com">Email</a></p>
             <p><a href="tel:555-555-5555">Phone</a></p>
-        </section>
-        <footer>This is a fake portfolio. All the projects and contact details given are not real.</footer>
+        </section> -->
+        <footer> &copy; 2019 Melissa Domgaard</footer>
         <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </body>
 
