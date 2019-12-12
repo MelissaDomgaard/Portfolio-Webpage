@@ -5,7 +5,7 @@ body {
     margin: 0;
 }
 nav {
-    background-color: red;
+    background-color: rgb(33, 56, 78);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -59,6 +59,7 @@ button {
     border-color: rgb(218, 15, 15);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     margin-right: 20px;
+    color:  rgb(196, 236, 248);
 
 }
 button a:hover {
